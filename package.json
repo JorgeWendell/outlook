@@ -6,7 +6,8 @@
     "dev": "next dev -p 3003",
     "build": "next build",
     "start": "next start -p 3003",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "git pull && npm install && npx drizzle-kit push && npm run build && pm2 restart outlook"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.3.3",
